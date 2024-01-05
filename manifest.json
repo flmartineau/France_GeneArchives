@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "France GeneArchives",
+  "version": "0.1",
+  "description": "Permet de lancer facilement une recherches dans les archives départementales Françaises.",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "https://geo.api.gouv.fr/*"
+  ],
+  "browser_action": {
+    "default_icon": "icons/icon-48.png",
+    "default_popup": "popup.html",
+    "default_title": "InfoVille"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"]
+    }
+  ]
+}
