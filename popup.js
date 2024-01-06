@@ -52,14 +52,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
+/**
+  Fetch the URL for the given city.
+**/
 function getArchiveURL(commune) {
   const codeDepartement = commune.codeDepartement;
   let archiveUrl = "";
-
-
-  console.log(commune);
-  console.log(codeDepartement);
 
   switch (codeDepartement) {
     case "01": //Ain
@@ -375,27 +373,30 @@ function getArchiveURL(commune) {
 }
 
 
-
+/**
+  Get the city's first letter for sites only allowing a letter as parameter.
+**/
 function getCommuneFirstLetter(name) {
-  console.log(name)
 
   for (let determinant of ["L'", "La ", "Le ", "Les ", "Los "]) {
-    console.log(determinant)
     if (name.startsWith(determinant)) {
-          console.log("ok")
-          console.log(determinant.length)
-          console.log(name.charAt(determinant.length))
           return name.charAt(determinant.length).toUpperCase();
     }
   }
   return name.charAt(0).toUpperCase();
 }
 
-
+/**
+  Change name format for cities names.
+  Example : "Le Grand-Lemps" => "Grand-Lemps (Le)"
+**/
 function formatWithPrefix(name) {
   return name.split(" ").length > 1 ? `${name.split(" ")[1]} (${name.split(" ")[0]})` : name;
 }
 
+/**
+ Encode a string to match ISO 8859-1 format
+**/
 function encodeISO88591(str) {
     return str
       .replace(/\u00EA/g, '%EA')
