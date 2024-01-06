@@ -1,0 +1,71 @@
+.autocomplete-option {
+    cursor: pointer;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    color: #ffff;
+}
+
+.autocomplete-option:hover {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+#searchInput {
+  width: 250px;
+}
+
+.popup-content {
+  width: 400px;
+}
+
+h2 {
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  color: #ffff;
+}
+
+body {
+  background: #15202b;
+}
+
+.popup-header {
+  margin-top: 0;
+  padding-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.app-version {
+  color: white;
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  font-size: 0.6em;
+  right: 8px;
+  position: fixed;
+}
+
+.popup-search {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8px;
+}
+
+#searchButton {
+    padding: 8px;
+    margin-left: 8px;
+}
+
+.app-icon {
+  width: 32px;
+  margin-right: 8px;
+}
+
+.footer {
+  margin-top: 10px;
+}
+
+.footer > p {
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  font-size: 0.7em;
+  color: #ffff;
+  font-style: italic;
+}
