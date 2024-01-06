@@ -19,8 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         option.classList.add('autocomplete-option');
                         option.addEventListener('click', function() {
                             selected_commune = commune;
-                            searchInput.value = commune.nom;
-                            console.log(getArchiveURL(commune));
+                            searchInput.value = option.textContent;
                             resultsElement.innerHTML = '';
                         });
                         resultsElement.appendChild(option);

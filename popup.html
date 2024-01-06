@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Recherche Ville</title>
-  <style>
-    .autocomplete-option {
-    cursor: pointer;
-    padding: 5px;
-    border-bottom: 1px solid #ddd;
-}
-
-.autocomplete-option:hover {
-    background-color: #f0f0f0;
-}
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <input type="text" id="searchInput" placeholder="Entrez le nom d'une ville">
-  <button id="searchButton">Rechercher</button>
-  <div id="results"></div>
-  <script src="popup.js"></script>
+  <div class="popup-content">
+    <div class="app-version">
+      <p>v1.0</p>
+    </div>
+    <div class="popup-header">
+      <img class="app-icon" src="icon.svg">
+      <h2 class="app-title">GeneArchives</h2>
+    </div>
+    <div class="popup-search">
+      <input type="text" id="searchInput" placeholder="Entrez le nom d'une ville">
+      <button id="searchButton">Rechercher</button>
+    </div>
+
+    <div id="results"></div>
+    <div class="footer">
+        <p>Remarque : La recherche d'informations sur certaines villes peut ne pas être disponible pour tous les départements.
+          Dans ce cas, vous serez redirigé vers le formulaire de recherche d'état civil du département associé
+          pour poursuivre votre recherche.</p>
+    </div>
+    <script src="popup.js"></script>
+  </div>
 </body>
 </html>
