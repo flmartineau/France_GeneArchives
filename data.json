@@ -1,0 +1,614 @@
+[
+  {
+    "codeDepartement": "01",
+    "baseUrl": "https://www.archives.ain.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil/n:88?REch_commune=%22@PARAM%22",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "02",
+    "baseUrl": "https://archives.aisne.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil/n:11?RECH_commune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "03",
+    "baseUrl": "https://archives.allier.fr",
+    "etatCivilUrl": "/archives-en-ligne/genealogie-histoire-des-familles/etat-civil-en-ligne?arko_default_5f992f52cfc55--filtreGroupes[groupes][0][arko_default_5f99316db4ce5][op]=AND&arko_default_5f992f52cfc55--filtreGroupes[groupes][0][arko_default_5f99316db4ce5][q][]=@PARAM&arko_default_5f992f52cfc55--filtreGroupes[groupes][0][arko_default_5f99316db4ce5][extras][mode]=popup",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "04",
+    "baseUrl": "https://archives04.fr",
+    "etatCivilUrl": "/r/59/etat-civil",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "05",
+    "baseUrl": "https://archives.hautes-alpes.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil/n:198?RECH_commune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "06",
+    "baseUrl": "https://archives06.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil2/n:101?RECH_commune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "07",
+    "baseUrl": "https://archives.ardeche.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil/n:96?RECH_comm=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "08",
+    "baseUrl": "https://archives.cd08.fr",
+    "etatCivilUrl": "/arkotheque/consult_fonds/index.php?ref_fonds=4",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "09",
+    "baseUrl": "http://mdr-archives.ariege.fr",
+    "etatCivilUrl": "/mdr/index.php/rechercheTheme/requeteConstructor/1/1/R/@PARAM/0",
+    "etatCivilParamFormat": "FIRST_LETTER_NAME_NO_PREFIX_UPPERCASE"
+  },
+  {
+    "codeDepartement": "10",
+    "baseUrl": "https://www.archives-aube.fr",
+    "etatCivilUrl": "/recherches/documents-numerises/genealogie/tout-letat-civil/etat-civil-des-communes-de-laube-hors-troyes-1552-1919?arko_default_6228a5627b9b1--filtreGroupes[groupes][0][arko_default_6228a6607b8e9][op]=AND&arko_default_6228a5627b9b1--filtreGroupes[groupes][0][arko_default_6228a6607b8e9][q][]=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "11",
+    "baseUrl": "https://archivesdepartementales.aude.fr",
+    "etatCivilUrl": "/letat-civil",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "12",
+    "baseUrl": "https://archives.aveyron.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil/n:22?Rech_comune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "13",
+    "baseUrl": "https://www.archives13.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil/n:64?Rech_commune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "14",
+    "baseUrl": "https://archives.calvados.fr",
+    "etatCivilUrl": "/search/results?formUuid=ecf01748-923d-463a-8d80-bd4142582bcd&sort=date_asc&mode=list&controlledAccessGeographicName%5B%5D=@PARAM+%28Calvados%29",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "15",
+    "baseUrl": "https://archives.cantal.fr",
+    "etatCivilUrl": "/vos-archives/etat-civil/recherche-dans-letat-civil?arko_default_5f8ef8b61e0d4--filtreGroupes[groupes][0][arko_default_5f8ef8e7d58fc][op]=AND&arko_default_5f8ef8b61e0d4--filtreGroupes[groupes][0][arko_default_5f8ef8e7d58fc][q][]=@PARAM&arko_default_5f8ef8b61e0d4--filtreGroupes[groupes][0][arko_default_5f8ef8e7d58fc][extras][mode]=popup",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "16",
+    "baseUrl": "https://archives.lacharente.fr",
+    "etatCivilUrl": "/s/12/registres-paroissiaux-et-etat-civil/?",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "17",
+    "baseUrl": "http://www.archinoe.net/v2/ad17/registre.html",
+    "etatCivilUrl": "",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "18",
+    "baseUrl": "https://www.archives18.fr",
+    "etatCivilUrl": "/archives-numerisees/registres-paroissiaux-et-etat-civil?arko_default_61011a8e5db65--filtreGroupes[groupes][0][arko_default_61011b4c3eacb][op]=AND&arko_default_61011a8e5db65--filtreGroupes[groupes][0][arko_default_61011b4c3eacb][q][]=@PARAM&arko_default_61011a8e5db65--filtreGroupes[groupes][0][arko_default_61011b4c3eacb][extras][mode]=popup",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "19",
+    "baseUrl": "http://www.archinoe.fr/cg19/registre.php",
+    "etatCivilUrl": "",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "2A",
+    "baseUrl": "http://archives.corsedusud.fr",
+    "etatCivilUrl": "/Internet_THOT/FrmSommaireFrame.asp",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "2B",
+    "baseUrl": "http://archives.isula.corsica",
+    "etatCivilUrl": "/Internet_THOT/FrmSommaireFrame.asp",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "21",
+    "baseUrl": "https://archives.cotedor.fr",
+    "etatCivilUrl": "/console/ir_ead_visu.php?eadid=FRAD021_000000912&ir=26564",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "22",
+    "baseUrl": "https://sallevirtuelle.cotesdarmor.fr",
+    "etatCivilUrl": "/EC/ecx/commune.aspx?lettre=@PARAM",
+    "etatCivilParamFormat": "FIRST_LETTER_NAME_NO_PREFIX_UPPERCASE"
+  },
+  {
+    "codeDepartement": "23",
+    "baseUrl": "https://archives.creuse.fr",
+    "etatCivilUrl": "/rechercher/archives-numerisees/registres-paroissiaux-et-de-letat-civil?arko_default_6089614c0e9ed--filtreGroupes[groupes][0][arko_default_6089619817b3c][op]=AND&arko_default_6089614c0e9ed--filtreGroupes[groupes][0][arko_default_6089619817b3c][q][]=@PARAM&arko_default_6089614c0e9ed--filtreGroupes[groupes][0][arko_default_6089619817b3c][extras][mode]=popup",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "24",
+    "baseUrl": "https://archives.dordogne.fr",
+    "etatCivilUrl": "/archives-numerisees/genealogie/registres-paroissiaux-et-detat-civil?arko_default_6197500eceff4--filtreGroupes[groupes][0][arko_default_6197504d97f6f][op]=AND&arko_default_6197500eceff4--filtreGroupes[groupes][0][arko_default_6197504d97f6f][q][]=@PARAM&arko_default_6197500eceff4--filtreGroupes[groupes][0][arko_default_6197504d97f6f][extras][mode]=popup",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "25",
+    "baseUrl": "https://archives.doubs.fr",
+    "etatCivilUrl": "/search/results?formUuid=4d44dde5-4523-4384-a2da-c1169870f1b2&sort=date_asc&mode=list&0-controlledAccessGeographicName%5B%5D=@PARAM",
+    "etatCivilParamFormat": "NAME_PREFIX_END"
+  },
+  {
+    "codeDepartement": "26",
+    "baseUrl": "https://archives.ladrome.fr",
+    "etatCivilUrl": "/search/results?formUuid=f6e7c1a1-9bda-40bc-a68b-13ed003eb0e5&sort=date_asc&mode=list&0-controlledAccessGeographicName%5B%5D=@PARAM+%28Dr%C3%B4me%2C+France%29",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "27",
+    "baseUrl": "https://archives.eure.fr",
+    "etatCivilUrl": "/search?preset=80&adv[1][type]=Descripteurs+lieux&adv[1][value][0]=@PARAM&adv-query=(Descripteurs+lieux%3A+%22@PARAM%22)&view=list",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "28",
+    "baseUrl": "https://archives28.fr",
+    "etatCivilUrl": "/archives-et-inventaires-en-ligne/histoire-des-individus-des-populations-et-genealogie/les-registres-paroissiaux-et-detat-civil?arko_default_6241bc24d7427--filtreGroupes[groupes][0][arko_default_6241bc68aa536][op]=AND&arko_default_6241bc24d7427--filtreGroupes[groupes][0][arko_default_6241bc68aa536][q][]=@PARAM&arko_default_6241bc24d7427--filtreGroupes[groupes][0][arko_default_6241bc68aa536][extras][mode]=popup",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "29",
+    "baseUrl": "https://recherche.archives.finistere.fr",
+    "etatCivilUrl": "/document/FRAD029_Etatcivil",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "30",
+    "baseUrl": "https://earchives.gard.fr",
+    "etatCivilUrl": "/archives/classification-scheme",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "31",
+    "baseUrl": "https://archives.haute-garonne.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil/n:97?RECH_commune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "32",
+    "baseUrl": "https://www.archives32.fr",
+    "etatCivilUrl": "/archives_numerisees/portail/etats_civils/",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "33",
+    "baseUrl": "https://archives.gironde.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil/n:89?REch_commune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "34",
+    "baseUrl": "https://archives-pierresvives.herault.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil/n:23?RECH_COMMUNE=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "35",
+    "baseUrl": "https://archives-en-ligne.ille-et-vilaine.fr",
+    "etatCivilUrl": "/thot_internet/FrmSommaireFrame.asp",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "36",
+    "baseUrl": "https://www.archives36.fr",
+    "etatCivilUrl": "/fonds-numerises/etat-civil?arko_default_61a0b234355b3--filtreGroupes[groupes][0][arko_default_61a0b2b3cb0f3][op]=AND&arko_default_61a0b234355b3--filtreGroupes[groupes][0][arko_default_61a0b2b3cb0f3][q][]=@PARAM&arko_default_61a0b234355b3--filtreGroupes[groupes][0][arko_default_61a0b2b3cb0f3][extras][mode]=popup",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "37",
+    "baseUrl": "https://archives.touraine.fr",
+    "etatCivilUrl": "/search/results?formUuid=e9414896-40cc-4ec3-936c-8acdfdb11770&sort=date_asc&mode=list&0-controlledAccessGeographicName%5B%5D=@PARAM+%28Indre-et-Loire%2C+France%29",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "38",
+    "baseUrl": "http://archivesenligne.archives-isere.fr",
+    "etatCivilUrl": "/mdr/index.php/rechercheTheme/requeteConstructor/1/1/R/@PARAM/0",
+    "etatCivilParamFormat": "FIRST_LETTER_NAME_NO_PREFIX_UPPERCASE"
+  },
+  {
+    "codeDepartement": "39",
+    "baseUrl": "https://archives39.fr",
+    "etatCivilUrl": "/search/results?formUuid=1eb1f0a3-b7ba-4c8a-bdae-395b322800e4&sort=referencecode_asc&mode=list&0-controlledAccessGeographicName%5B%5D=@PARAM%2C+commune",
+    "etatCivilParamFormat": "NAME_PREFIX_END"
+  },
+  {
+    "codeDepartement": "40",
+    "baseUrl": "https://archives.landes.fr",
+    "etatCivilUrl": "/faire-une-recherche/archives-numerisees/etat-civil?arko_default_62a88e82782fb--filtreGroupes[groupes][0][arko_default_62a88ef4ebacf][op]=AND&arko_default_62a88e82782fb--filtreGroupes[groupes][0][arko_default_62a88ef4ebacf][q][]=@PARAM&arko_default_62a88e82782fb--filtreGroupes[groupes][0][arko_default_62a88ef4ebacf][extras][mode]=popup",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "41",
+    "baseUrl": "http://archives.culture41.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil?Rech_commune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "42",
+    "baseUrl": "https://archives.loire.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil/n:92?RECH_commune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "43",
+    "baseUrl": "https://www.archives43.fr",
+    "etatCivilUrl": "/archives-en-ligne/familles-et-individus-en-haute-loire/etat-civil-de-la-haute-loire?arko_default_616fd22b91d20--filtreGroupes[groupes][0][arko_default_616fd46414cf1][op]=AND&arko_default_616fd22b91d20--filtreGroupes[groupes][0][arko_default_616fd46414cf1][q][]=@PARAM&arko_default_616fd22b91d20--filtreGroupes[groupes][0][arko_default_616fd46414cf1][extras][mode]=popup",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "44",
+    "baseUrl": "https://archives-numerisees.loire-atlantique.fr",
+    "etatCivilUrl": "/v2/ad44/registre.html",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "45",
+    "baseUrl": "https://www.archives-loiret.fr",
+    "etatCivilUrl": "/faire-vos-recherches/archives-numerisees/etat-civil?arko_default_61e6b3f775f99--filtreGroupes[groupes][0][arko_default_61e6b4731902f][op]=AND&arko_default_61e6b3f775f99--filtreGroupes[groupes][0][arko_default_61e6b4731902f][q][]=@PARAM&arko_default_61e6b3f775f99--filtreGroupes[groupes][0][arko_default_61e6b4731902f][extras][mode]=popup",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "46",
+    "baseUrl": "https://archives.lot.fr",
+    "etatCivilUrl": "/f/adlot/tableau/?&crit1=2&v_2_1=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "47",
+    "baseUrl": "http://www.archinoe.fr/v2/ad47/registre.html",
+    "etatCivilUrl": "",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "48",
+    "baseUrl": "https://archives.lozere.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil/tableau/FRAD048_ETATCIVIL/n:88?REch_commune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "49",
+    "baseUrl": "https://recherche-archives.maine-et-loire.fr",
+    "etatCivilUrl": "/v2/ad49/registre.html",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "50",
+    "baseUrl": "https://www.archives-manche.fr",
+    "etatCivilUrl": "/e/ad50_etatcivil?from=0&f_6[0]=@PARAM",
+    "etatCivilParamFormat": "NAME_PREFIX_END_ISO88591"
+  },
+  {
+    "codeDepartement": "51",
+    "baseUrl": "https://archives.marne.fr",
+    "etatCivilUrl": "/search/results?formUuid=6977c5eb-072c-470c-8dfa-6d6488a2d71e&sort=date_asc&mode=table&0-controlledAccessGeographicName%5B%5D=@PARAM+%28Marne%2C+France%29",
+    "etatCivilParamFormat": "NAME_PREFIX_END"
+  },
+  {
+    "codeDepartement": "52",
+    "baseUrl": "https://archives.haute-marne.fr",
+    "etatCivilUrl": "/document/FRAD052_Edepot_etat-civil",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "53",
+    "baseUrl": "https://archives.lamayenne.fr",
+    "etatCivilUrl": "/archives-en-ligne/custom-results.html?base=ead2&rbase=ead2&facets=udate%3Bfgeogcommune%3Bfanciennescommune%3Bfinstitution_paroisse%3Bftypedocec%3Bflisteacte%3Bfbdate&name=etat-civil&linkBack=true&cop1=AND&champ1=fcommunes_paroisses&query1=@PARAM+%28Mayenne%2C+France%29",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "54",
+    "baseUrl": "https://archivesenligne.archives.cg54.fr",
+    "etatCivilUrl": "/archives-en-ligne/registres-paroissiaux-et-detat-civil?arko_default_62bc67565d099--filtreGroupes[groupes][0][arko_default_62bc67951f875][op]=AND&arko_default_62bc67565d099--filtreGroupes[groupes][0][arko_default_62bc67951f875][q][]=@PARAM&arko_default_62bc67565d099--filtreGroupes[groupes][0][arko_default_62bc67951f875][extras][mode]=popup",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "55",
+    "baseUrl": "https://archives.meuse.fr",
+    "etatCivilUrl": "/search/results?formUuid=32239fba-c3ac-416c-b0f7-889cfa87214a&sort=date_asc&mode=list&facet_media=image&0-controlledAccessGeographicName[]=@PARAM",
+    "etatCivilParamFormat": "NAME_NO_ACCENTS_UPPERCASE_PREFIX_END"
+  },
+  {
+    "codeDepartement": "56",
+    "baseUrl": "https://rechercher.patrimoines-archives.morbihan.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil/n:6?REch_commune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "57",
+    "baseUrl": "https://www.archives57.com",
+    "etatCivilUrl": "/index.php/recherches/archives-en-ligne/registres-paroissiaux",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "58",
+    "baseUrl": "https://archives.nievre.fr",
+    "etatCivilUrl": "/search/results?formUuid=9430efb3-399f-4de3-a3e7-004e232d8601&sort=date_asc&mode=mosaic&0-controlledAccessGeographicName[]=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME_UPPERCASE"
+  },
+  {
+    "codeDepartement": "59",
+    "baseUrl": "https://archivesdepartementales.lenord.fr",
+    "etatCivilUrl": "/search/results?formUuid=dc4e871d-0b62-41fb-9921-5ded573781b8&sort=relevance&0-controlledAccessGeographicName[]=@PARAM",
+    "etatCivilParamFormat": "NAME_NO_ACCENTS_UPPERCASE"
+  },
+  {
+    "codeDepartement": "60",
+    "baseUrl": "https://ressources.archives.oise.fr",
+    "etatCivilUrl": "/v2/ad60/registre.html",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "61",
+    "baseUrl": "https://archives.orne.fr",
+    "etatCivilUrl": "/etat-civil",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "62",
+    "baseUrl": "https://archivesenligne.pasdecalais.fr",
+    "etatCivilUrl": "/console/ir_seriel.php?id=56&p=formulaire_etat_civil",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "63",
+    "baseUrl": "https://www.archivesdepartementales.puy-de-dome.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil/n:13?RECH_comune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "64",
+    "baseUrl": "https://earchives.le64.fr",
+    "etatCivilUrl": "/archives-en-ligne/results.html?base=ead&rbase=ead&facets=root-id%3Bdctype%3Bfpersname%3Bdccreator%3Bdccontributor%3Bdcsubject%3Bqdcspatial%3Bdcpublisher%3Bdcsource%3Bobject%3Bfbdate&name=etat-civil&linkBack=true&n-start=0&champ1=root-id&query1=FRAD064003_IR0002&cop1=AND&hidden1=true&cop2=AND&champ2=fgeogname&ff=root-id&fv=FRAD064003_IR0002&query2=$@PARAM+%28Pyr%C3%A9n%C3%A9es-Atlantiques%2C+France%29&op2=OR",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "65",
+    "baseUrl": "https://archivesenligne65.fr",
+    "etatCivilUrl": "/archives/acces-geographique/communes?arko_default_634fc50722e59--filtreGroupes[groupes][0][arko_default_634feb7ceb78f][op]=AND&arko_default_634fc50722e59--filtreGroupes[groupes][0][arko_default_634feb7ceb78f][q][]=@PARAM&arko_default_634fc50722e59--filtreGroupes[groupes][0][arko_default_634feb7ceb78f][extras][mode]=popup",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "66",
+    "baseUrl": "https://archives.cd66.fr",
+    "etatCivilUrl": "/mdr/index.php/rechercheTheme/requeteConstructor/1/1/R/@PARAM/0",
+    "etatCivilParamFormat": "FIRST_LETTER_NAME_NO_PREFIX_UPPERCASE"
+  },
+  {
+    "codeDepartement": "67",
+    "baseUrl": "https://archives.bas-rhin.fr",
+    "etatCivilUrl": "/registres-paroissiaux-et-documents-d-etat-civil/",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "68",
+    "baseUrl": "https://archives68.alsace.eu",
+    "etatCivilUrl": "/search/results?formUuid=f4ed0a71-fe36-42d4-81bd-780da14c2125&sort=relevance&mode=list&0-controlledAccessGeographicName%5B%5D=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "69",
+    "baseUrl": "https://archives.rhone.fr",
+    "etatCivilUrl": "/search/results?formUuid=dde23a8f-cc71-4300-9805-bda67eec1ac0&sort=date_asc&mode=list&0-controlledAccessGeographicName[]=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME_UPPERCASE"
+  },
+  {
+    "codeDepartement": "70",
+    "baseUrl": "https://archives.haute-saone.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil2/n:119?RECH_commune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "71",
+    "baseUrl": "https://www.archives71.fr",
+    "etatCivilUrl": "/consulter/en-ligne/familles-et-individus/etat-civil?arko_default_61b1ccdceb9a7--filtreGroupes[groupes][0][arko_default_61b1cd7726c84][op]=AND&arko_default_61b1ccdceb9a7--filtreGroupes[groupes][0][arko_default_61b1cd7726c84][q][]=@PARAM&arko_default_61b1ccdceb9a7--filtreGroupes[groupes][0][arko_default_61b1cd7726c84][extras][mode]=popup",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "72",
+    "baseUrl": "https://archives.sarthe.fr",
+    "etatCivilUrl": "/archives-en-ligne/registres-paroissiaux-etat-civil?arko_default_6319dbb9a1c43--filtreGroupes[groupes][0][arko_default_6319dbfb4cff8][op]=AND&arko_default_6319dbb9a1c43--filtreGroupes[groupes][0][arko_default_6319dbfb4cff8][q][]=@PARAM&arko_default_6319dbb9a1c43--filtreGroupes[groupes][0][arko_default_6319dbfb4cff8][extras][mode]=popup",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "73",
+    "baseUrl": "https://recherche-archives.savoie.fr",
+    "etatCivilUrl": "/?label_geogname=Communes%2C+lieux&form_search_geogname=%22@PARAM%22&action=search&id=recherche_guidee_etat_civil_web",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "74",
+    "baseUrl": "https://archives.hautesavoie.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil/line/FRAD074_000000197/n:139?RECH_commune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "75",
+    "baseUrl": "https://archives.paris.fr",
+    "etatCivilUrl": "/r/124/etat-civil-de-paris",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "76",
+    "baseUrl": "https://www.archivesdepartementales76.net",
+    "etatCivilUrl": "/archive/resultats/etatcivil/n:113?RECH_commune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "77",
+    "baseUrl": "http://archives-en-ligne.seine-et-marne.fr",
+    "etatCivilUrl": "/mdr/index.php/rechercheTheme/requeteConstructor/14/1/R/@PARAM/0",
+    "etatCivilParamFormat": "FIRST_LETTER_NAME_UPPERCASE"
+  },
+  {
+    "codeDepartement": "78",
+    "baseUrl": "https://archives.yvelines.fr",
+    "etatCivilUrl": "/rechercher/archives-en-ligne/registres-paroissiaux-et-detat-civil/registres-paroissiaux-et-detat-civil?arko_default_618914e3ee7e4--filtreGroupes[groupes][0][arko_default_61894fee776d8][op]=AND&arko_default_618914e3ee7e4--filtreGroupes[groupes][0][arko_default_61894fee776d8][q][]=@PARAM&arko_default_618914e3ee7e4--filtreGroupes[groupes][0][arko_default_61894fee776d8][extras][mode]=popup",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "79",
+    "baseUrl": "https://archives-deux-sevres-vienne.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil/n:100?RECH_commune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "80",
+    "baseUrl": "https://archives.somme.fr",
+    "etatCivilUrl": "/search/results?formUuid=cebd4a00-25b1-4b1c-a31e-8ea66d58efa2&sort=date_asc&mode=list&1-controlledAccessGeographicName%5B%5D=@PARAM+%28Somme%2C+France%29",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "81",
+    "baseUrl": "https://e-archives.tarn.fr",
+    "etatCivilUrl": "/archives/classification-scheme#tt2-39",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "82",
+    "baseUrl": "https://archivesdepartementales.ledepartement82.fr",
+    "etatCivilUrl": "",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "83",
+    "baseUrl": "https://archives.var.fr",
+    "etatCivilUrl": "/arkotheque/consult_fonds/index.php?ref_fonds=2",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "84",
+    "baseUrl": "https://earchives.vaucluse.fr",
+    "etatCivilUrl": "/document/FRAD084_IR0001730",
+    "etatCivilParamFormat": ""
+  },
+  {
+    "codeDepartement": "85",
+    "baseUrl": "https://etatcivil-archives.vendee.fr",
+    "etatCivilUrl": "/f/etatcivil/tableau/?&crit1=1&v_1_1=@PARAM",
+    "etatCivilParamFormat": "NAME_PREFIX_END_ISO88591"
+  },
+  {
+    "codeDepartement": "86",
+    "baseUrl": "https://archives-deux-sevres-vienne.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil/n:100?RECH_commune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "87",
+    "baseUrl": "https://archives.haute-vienne.fr",
+    "etatCivilUrl": "/rechercher/archives-en-ligne/etat-civil?arko_default_603517b8650b3--filtreGroupes[groupes][0][arko_default_616d87384282a][op]=AND&arko_default_603517b8650b3--filtreGroupes[groupes][0][arko_default_616d87384282a][q][]=@PARAM&arko_default_603517b8650b3--filtreGroupes[groupes][0][arko_default_616d87384282a][extras][mode]=popup",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "88",
+    "baseUrl": "https://recherche-archives.vosges.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil/n:2?RECH_commune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "89",
+    "baseUrl": "https://archivesenligne.yonne.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil?RECH_comms=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "90",
+    "baseUrl": "https://archives.territoiredebelfort.fr",
+    "etatCivilUrl": "/search/results?formUuid=ce8c3b7f-77f9-493b-81dd-d09d11bdc431&sort=date_asc&mode=table&0-controlledAccessGeographicName%5B%5D=@PARAM+%28Territoire+de+Belfort%2C+France%29",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "91",
+    "baseUrl": "https://archives.essonne.fr",
+    "etatCivilUrl": "/search/results?formUuid=63a201cb-bad5-4257-83fc-6f844178c9d8&sort=referencecode_asc&mode=list&2-controlledAccessGeographicName%5B%5D=@PARAM+Commune&6-controlledAccessSubject%5B%5D=%C3%A9tat+civil",
+    "etatCivilParamFormat": "NAME_NO_ACCENTS_UPPERCASE_PREFIX_END"
+  },
+  {
+    "codeDepartement": "92",
+    "baseUrl": "https://archives.hauts-de-seine.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil/n:92?RECH_commune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "93",
+    "baseUrl": "https://archives.seinesaintdenis.fr",
+    "etatCivilUrl": "/archive/resultats/etatcivil/n:217?rech_commune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "94",
+    "baseUrl": "https://archives.valdemarne.fr",
+    "etatCivilUrl": "/recherches/archives-en-ligne/etat-civil?arko_default_6303325b22a2d--filtreGroupes[groupes][0][arko_default_630332ab3ef85][op]=AND&arko_default_6303325b22a2d--filtreGroupes[groupes][0][arko_default_630332ab3ef85][q][]=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "95",
+    "baseUrl": "https://archives.valdoise.fr",
+    "etatCivilUrl": "/archive/resultats/EtatCivilNumerise/n:419?RECH_Commune=@PARAM",
+    "etatCivilParamFormat": "SIMPLE_NAME"
+  },
+  {
+    "codeDepartement": "971",
+    "baseUrl": "https://recherche-anom.culture.gouv.fr",
+    "etatCivilUrl": "/caomec2/resultats.php?territoire=GUADELOUPE&commune=@PARAM",
+    "etatCivilParamFormat": "NAME_NO_ACCENTS_UPPERCASE"
+  },
+  {
+    "codeDepartement": "972",
+    "baseUrl": "https://recherche-anom.culture.gouv.fr",
+    "etatCivilUrl": "/caomec2/resultats.php?territoire=MARTINIQUE&commune=@PARAM",
+    "etatCivilParamFormat": "NAME_NO_ACCENTS_UPPERCASE"
+  },
+  {
+    "codeDepartement": "973",
+    "baseUrl": "https://recherche-anom.culture.gouv.fr",
+    "etatCivilUrl": "/caomec2/resultats.php?territoire=GUYANE&commune=@PARAM",
+    "etatCivilParamFormat": "NAME_NO_ACCENTS_UPPERCASE"
+  },
+  {
+    "codeDepartement": "974",
+    "baseUrl": "https://recherche-anom.culture.gouv.fr",
+    "etatCivilUrl": "/caomec2/resultats.php?territoire=REUNION&commune=@PARAM",
+    "etatCivilParamFormat": "NAME_NO_ACCENTS_UPPERCASE"
+  },
+  {
+    "codeDepartement": "975",
+    "baseUrl": "https://recherche-anom.culture.gouv.fr",
+    "etatCivilUrl": "/caomec2/resultats.php?territoire=SAINT-PIERRE-ET-MIQUELON&commune=@PARAM",
+    "etatCivilParamFormat": "NAME_NO_ACCENTS_UPPERCASE"
+  },
+  {
+    "codeDepartement": "976",
+    "baseUrl": "https://recherche-anom.culture.gouv.fr",
+    "etatCivilUrl": "/caomec2/resultats.php?territoire=MAYOTTE&commune=@PARAM",
+    "etatCivilParamFormat": "NAME_NO_ACCENTS_UPPERCASE"
+  }
+]
