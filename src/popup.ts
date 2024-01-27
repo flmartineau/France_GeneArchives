@@ -1,8 +1,8 @@
-let selected_commune = null;
-let urlsData = null;
+let selected_commune: any = null;
+let urlsData: any = null;
 
 document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.getElementById('searchInput');
+    const searchInput = document.getElementById('searchInput') as HTMLInputElement;
     const resultsElement = document.getElementById('results');
 
     fetch('./data/data.json')
@@ -18,34 +18,41 @@ document.addEventListener('DOMContentLoaded', function() {
             fetch(`https://geo.api.gouv.fr/communes?nom=${searchValue}&type=commune-actuelle&fields=codeParent,nom,code,codeDepartement&format=json`)
                 .then(response => response.json())
                 .then(data => {
+
+                    if (resultsElement === null) {
+
+                        return;
+                    }
                     resultsElement.innerHTML = '';
-                    data.forEach(commune => {
-                        const option = document.createElement('div');
-                        option.textContent = commune.nom + " (" + commune.code + ")";
-                        option.classList.add('autocomplete-option');
-                        option.addEventListener('click', function() {
-                            selected_commune = commune;
-                            searchInput.value = option.textContent;
-                            resultsElement.innerHTML = '';
-                        });
-                        resultsElement.appendChild(option);
+                    data.forEach((commune: any) => {
+                      const option = document.createElement('div');
+                      option.textContent = commune.nom + " (" + commune.code + ")";
+                      option.classList.add('autocomplete-option');
+                      option.addEventListener('click', function() {
+                        selected_commune = commune;
+                        searchInput.value = option.textContent ?? '';
+                        resultsElement.innerHTML = '';
+                      });
+                      resultsElement.appendChild(option);
                     });
                 })
                 .catch(error => {
                     console.error('Erreur:', error);
                 });
-        } else {
-            resultsElement.innerHTML = '';
+        if (resultsElement !== null) {
+          resultsElement.innerHTML = '';
         }
+      }
     });
 });
 
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const searchButton = document.getElementById('searchButton');
-    const searchInput = document.getElementById('searchInput');
+    const searchInput = document.getElementById('searchInput') as HTMLInputElement;
+
+    if (searchButton === null || searchInput === null) {
+      return;
+    }
 
     searchButton.addEventListener('click', function() {
         const searchQuery = searchInput.value;
@@ -56,14 +63,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
 /**
  * Change the commune name format to match the given format
  * @param {*} communeName the commune name
  * @param {*} format the format to apply
  * @returns the commune name with the given format
  */
-function applyFormatToCommuneName(communeName, format) {
+function applyFormatToCommuneName(communeName: string, format: string): string {
   switch (format) {
     case "SIMPLE_NAME" :
       return encodeURIComponent(communeName);
@@ -78,30 +84,27 @@ function applyFormatToCommuneName(communeName, format) {
     case "NAME_NO_ACCENTS_UPPERCASE_PREFIX_END":
       return encodeURIComponent(formatWithPrefix(communeName.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase()));
     case "FIRST_LETTER_NAME_UPPERCASE":
-      return encodeURIComponent(commune.nom[0].toUpperCase());
+      return encodeURIComponent(communeName[0].toUpperCase());
     case "FIRST_LETTER_NAME_NO_PREFIX_UPPERCASE":
-      return encodeURIComponent(getCommuneFirstLetter(commune.nom));
+      return encodeURIComponent(getCommuneFirstLetter(communeName));
     default:
       return "";
   }
 }
 
-
 /**
   Fetch the URL for the given city.
 **/
-function getArchiveURL(commune) {
-  let urlData = urlsData.find(urlData => urlData.codeDepartement === commune.codeDepartement);
+function getArchiveURL(commune: any): string {
+  let urlData = urlsData.find((urlData: any) => urlData.codeDepartement === commune.codeDepartement);
   let archiveUrl = (urlData.baseUrl + urlData.etatCivilUrl).replace("@PARAM", applyFormatToCommuneName(commune.nom, urlData.etatCivilParamFormat));
   return archiveUrl;
 }
 
-
 /**
   Get the city's first letter for sites only allowing a letter as parameter.
 **/
-function getCommuneFirstLetter(name) {
-
+function getCommuneFirstLetter(name: string): string {
   for (let determinant of ["L'", "La ", "Le ", "Les ", "Los "]) {
     if (name.startsWith(determinant)) {
           return name.charAt(determinant.length).toUpperCase();
@@ -114,14 +117,14 @@ function getCommuneFirstLetter(name) {
   Change name format for cities names.
   Example : "Le Grand-Lemps" => "Grand-Lemps (Le)"
 **/
-function formatWithPrefix(name) {
+function formatWithPrefix(name: string): string {
   return name.split(" ").length > 1 ? `${name.split(" ")[1]} (${name.split(" ")[0]})` : name;
 }
 
 /**
  Encode a string to match ISO 8859-1 format
 **/
-function encodeISO88591(str) {
+function encodeISO88591(str: string): string {
     return str
       .replace(/\u00EA/g, '%EA')
       .replace(/\u00E2/g, '%E2')
