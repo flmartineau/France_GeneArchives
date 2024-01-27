@@ -14,7 +14,7 @@
   ],
   "browser_action": {
     "default_icon": "assets/icon.svg",
-    "default_popup": "popup.html",
+    "default_popup": "index.html",
     "default_title": "GeneArchives"
   },
   "browser_specific_settings": {

@@ -48,7 +48,7 @@ class EtatCivil extends React.Component<EtatCivilProps, EtatCivilState> {
     }
 
     searchCommune = (): void => {
-        const searchUrl = this.state.selectedCommune ? this.getArchiveURL(this.state.selectedCommune) : '';
+        const searchUrl: string = this.state.selectedCommune ? this.getArchiveURL(this.state.selectedCommune) : '';
         browser.tabs.create({ url: searchUrl }); 
     }
 
@@ -63,7 +63,7 @@ class EtatCivil extends React.Component<EtatCivilProps, EtatCivilState> {
             return '';
         }
     
-        let urlData = this.props.urlsData.find((urlData: any) => urlData.codeDepartement === commune.codeDepartement);
+        let urlData = this.props.urlsData.find((urlData: IUrls) => urlData.codeDepartement === commune.codeDepartement);
         if (urlData === undefined) {
             return '';
         }
@@ -75,7 +75,7 @@ class EtatCivil extends React.Component<EtatCivilProps, EtatCivilState> {
 
     render() {
         return (
-            <div className="popup-content">
+            <div className="etatcivil-content">
                 <div className="popup-search">
                     <input type="text" 
                             id="searchInput" placeholder="Entrez le nom d'une ville"

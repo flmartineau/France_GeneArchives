@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
-        main: './src/popup.tsx',
+        main: './src/index.tsx',
         styles: './src/styles/style.scss',
     },
     resolve: {
@@ -52,8 +52,8 @@ module.exports = {
             filename: 'style.css',
         }),
         new HtmlWebpackPlugin({
-            template: './src/popup.html',
-            filename: 'popup.html',
+            template: './src/index.html',
+            filename: 'index.html',
             chunks: ['main', 'styles'],
         }),
         new CopyWebpackPlugin({
