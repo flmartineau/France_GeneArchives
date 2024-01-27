@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('searchInput');
     const resultsElement = document.getElementById('results');
 
-    fetch(browser.runtime.getURL('/data.json'))
+    fetch('./data/data.json')
       .then(response => response.json())
       .then(data => {
         urlsData = data;

@@ -13,8 +13,8 @@
     "https://geo.api.gouv.fr/*"
   ],
   "browser_action": {
-    "default_icon": "icon.svg",
-    "default_popup": "popup.html",
+    "default_icon": "src/assets/icon.svg",
+    "default_popup": "src/popup.html",
     "default_title": "GeneArchives"
   },
   "browser_specific_settings": {
