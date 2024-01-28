@@ -49,8 +49,8 @@
   },
   {
     "codeDepartement": "09",
-    "baseUrl": "http://mdr-archives.ariege.fr",
-    "etatCivilUrl": "/mdr/index.php/rechercheTheme/requeteConstructor/1/1/R/@PARAM/0",
+    "baseUrl": "http://archives.ariege.fr",
+    "etatCivilUrl": "http://mdr-archives.ariege.fr/mdr/index.php/rechercheTheme/requeteConstructor/1/1/R/@PARAM/0",
     "etatCivilParamFormat": "FIRST_LETTER_NAME_NO_PREFIX_UPPERCASE"
   },
   {
@@ -133,8 +133,8 @@
   },
   {
     "codeDepartement": "22",
-    "baseUrl": "https://sallevirtuelle.cotesdarmor.fr",
-    "etatCivilUrl": "/EC/ecx/commune.aspx?lettre=@PARAM",
+    "baseUrl": "https://sallevirtuelle.cotesdarmor.fr/EC/ecx/commune.aspx",
+    "etatCivilUrl": "?lettre=@PARAM",
     "etatCivilParamFormat": "FIRST_LETTER_NAME_NO_PREFIX_UPPERCASE"
   },
   {
@@ -211,8 +211,8 @@
   },
   {
     "codeDepartement": "35",
-    "baseUrl": "https://archives-en-ligne.ille-et-vilaine.fr",
-    "etatCivilUrl": "/thot_internet/FrmSommaireFrame.asp",
+    "baseUrl": "https://archives-en-ligne.ille-et-vilaine.fr/thot_internet/FrmSommaireFrame.asp",
+    "etatCivilUrl": "",
     "etatCivilParamFormat": ""
   },
   {
@@ -283,8 +283,8 @@
   },
   {
     "codeDepartement": "47",
-    "baseUrl": "http://www.archinoe.fr/v2/ad47/registre.html",
-    "etatCivilUrl": "",
+    "baseUrl": "https://archivesdepartementales.lotetgaronne.fr/archives-numerisees",
+    "etatCivilUrl": "http://www.archinoe.fr/v2/ad47/registre.html",
     "etatCivilParamFormat": ""
   },
   {

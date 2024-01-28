@@ -28,7 +28,7 @@ const App: React.FC = () => {
   return (
     <div className="popup-content">
       <div className="app-version">
-        <p>v1.1</p>
+        <p>v1.1.1</p>
       </div>
       <div className="popup-header">
         <img className="app-icon" src="assets/icon.svg" />

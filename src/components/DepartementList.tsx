@@ -18,7 +18,7 @@ class DepartementList extends React.Component<DepartementListProps, DepartementL
     constructor(props: DepartementListProps) {
         super(props);
         this.state = {
-            selectedDepartementCode: null,
+            selectedDepartementCode: '01',
             departementList: []
         };
 

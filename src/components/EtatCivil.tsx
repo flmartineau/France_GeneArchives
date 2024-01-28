@@ -67,8 +67,10 @@ class EtatCivil extends React.Component<EtatCivilProps, EtatCivilState> {
         if (urlData === undefined) {
             return '';
         }
+
+        let differentBaseUrl: boolean = urlData.etatCivilUrl.startsWith("http");
     
-        let archiveUrl: string = (urlData.baseUrl + urlData.etatCivilUrl).replace("@PARAM", FormatHelper.applyFormatToCommuneName(commune.nom, urlData.etatCivilParamFormat));
+        let archiveUrl: string = ((!differentBaseUrl ? urlData.baseUrl : "") + urlData.etatCivilUrl).replace("@PARAM", FormatHelper.applyFormatToCommuneName(commune.nom, urlData.etatCivilParamFormat));
         return archiveUrl;
     }
 
