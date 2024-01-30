@@ -19,6 +19,7 @@
     "react-dom": "^18.2.0"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "package": "npm run build && node package.js"
   }
 }

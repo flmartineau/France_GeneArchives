@@ -79,12 +79,12 @@ class EtatCivil extends React.Component<EtatCivilProps, EtatCivilState> {
 
 
         if (isArkoFormat) {
-            let arkoRegex = /@ARKO_PARAMS\(([^,]*),([^)]*)\)/;
-            let params = typeUrl.match(arkoRegex)?.[0] ?? '';
-            let id1 = typeUrl.match(arkoRegex)?.[1] ?? '';
-            let id2 = typeUrl.match(arkoRegex)?.[2] ?? '';
+            let arkoRegex: RegExp = /@ARKO_PARAMS\(([^,]*),([^)]*)\)/;
+            let params: string = typeUrl.match(arkoRegex)?.[0] ?? '';
+            let id1: string = typeUrl.match(arkoRegex)?.[1] ?? '';
+            let id2: string = typeUrl.match(arkoRegex)?.[2] ?? '';
 
-            let arkoParams = `arko_default_${id1}--filtreGroupes[groupes][0]` +
+            let arkoParams: string = `arko_default_${id1}--filtreGroupes[groupes][0]` +
                 `[arko_default_${id2}][op]=AND&arko_default_${id1}--filtreGroupes[groupes][0]` + 
                 `[arko_default_${id2}][q][]=@PARAM&arko_default_${id1}--filtreGroupes[groupes][0][arko_default_${id2}][extras][mode]=popup`;
 

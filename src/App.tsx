@@ -7,6 +7,7 @@ const App: React.FC = () => {
 
     const [urlsData, setUrlsData] = useState<IUrls[] | null>(null);
     const [isCommuneView, setIsCommuneView] = useState<boolean>(false);
+    const [appVersion, setAppVersion] = useState<string | null>(null);
 
     useEffect(() => {    
         fetch('./data/data.json')
@@ -14,6 +15,15 @@ const App: React.FC = () => {
             .then((data: IUrls[] | null) => {
                 setUrlsData(data);
          });
+    }, []);
+
+
+    useEffect(() => {
+      fetch('./manifest.json')
+        .then(response => response.json())
+        .then(data => {
+          setAppVersion(data.version);
+        });
     }, []);
 
 
@@ -28,7 +38,7 @@ const App: React.FC = () => {
   return (
     <div className="popup-content">
       <div className="app-version">
-        <p>v1.1.1</p>
+        <p>{appVersion}</p>
       </div>
       <div className="popup-header">
         <img className="app-icon" src="assets/icon.svg" />

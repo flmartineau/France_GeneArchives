@@ -25,7 +25,7 @@ GeneArchives est une extension Firefox qui permet aux utilisateurs de trouver ra
 ## Limitations
 - Certains départements ne permettent pas de préciser la commune dans la barre de recherche.
 - Les noms des anciennes communes ne sont pas encore supportées.
-
+- Les départements suivants ne possède pas de recensements numérisés : Lozère (48), Manche (50), Pyrénées-Atlantiques (64), Guadeloupe (971), Martinique (972),     Guyane (973), La Réunion (974), Mayotte (976)
 
 ## Mises à jour futures
 - Ajout des anciennes communes
