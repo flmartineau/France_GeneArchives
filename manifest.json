@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "France GeneArchives",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "GeneArchives est une extension Firefox qui permet aux utilisateurs de trouver rapidement la page d'archives numérisées d'état civil et/ou registres paroissiaux d'une commune. Pour la plupart des départements, la recherche sera pré-remplie sur la page des archives départementales.",
   "icons": {
     "48": "assets/icon.svg",
