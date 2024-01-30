@@ -94,3 +94,14 @@ body {
   color: #ffff;
   font-style: italic;
 }
+
+
+.etatcivil-content {
+  .archives-select {
+    display: flex;
+    margin-bottom: 12px;
+    justify-content: space-evenly;
+    color: white;
+    font-family: Arial, "Helvetica Neue", sans-serif;
+  }
+}

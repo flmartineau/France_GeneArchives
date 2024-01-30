@@ -6,7 +6,7 @@ import DepartementList from './components/DepartementList';
 const App: React.FC = () => {
 
     const [urlsData, setUrlsData] = useState<IUrls[] | null>(null);
-    const [isCommuneView, setIsCommuneView] = useState<boolean>(true);
+    const [isCommuneView, setIsCommuneView] = useState<boolean>(false);
 
     useEffect(() => {    
         fetch('./data/data.json')

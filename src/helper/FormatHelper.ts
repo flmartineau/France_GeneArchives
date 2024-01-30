@@ -20,6 +20,8 @@ export abstract class FormatHelper {
             return encodeURIComponent(communeName.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase());
         case "NAME_NO_ACCENTS_UPPERCASE_PREFIX_END":
             return encodeURIComponent(FormatHelper.formatWithPrefix(communeName.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase()));
+        case "NAME_NO_ACCENTS_PREFIX_END":
+            return encodeURIComponent(FormatHelper.formatWithPrefix(communeName.normalize("NFD").replace(/[\u0300-\u036f]/g, "")));
         case "FIRST_LETTER_NAME_UPPERCASE":
             return encodeURIComponent(communeName[0].toUpperCase());
         case "FIRST_LETTER_NAME_NO_PREFIX_UPPERCASE":

@@ -10,6 +10,7 @@ interface EtatCivilProps {
 interface EtatCivilState {
     selectedCommune: ICommune | null;
     communeList: ICommune[];
+    selectedArchiveType: string;
 }
 
 
@@ -18,7 +19,8 @@ class EtatCivil extends React.Component<EtatCivilProps, EtatCivilState> {
         super(props);
         this.state = {
             selectedCommune: null,
-            communeList: []
+            communeList: [],
+            selectedArchiveType: "etat-civil"
         };
     }
 
@@ -68,16 +70,58 @@ class EtatCivil extends React.Component<EtatCivilProps, EtatCivilState> {
             return '';
         }
 
-        let differentBaseUrl: boolean = urlData.etatCivilUrl.startsWith("http");
+        let typeUrl: string = this.state.selectedArchiveType == 'etat-civil' ? urlData.etatCivilUrl : urlData.recensementUrl;
+        let typeParamFormat: string = this.state.selectedArchiveType == 'etat-civil' ? urlData.etatCivilParamFormat : urlData.recensementParamFormat;
+
+        let differentBaseUrl: boolean = typeUrl.startsWith("http");
+
+        let isArkoFormat: boolean = typeUrl.includes("@ARKO_PARAMS");
+
+
+        if (isArkoFormat) {
+            let arkoRegex = /@ARKO_PARAMS\(([^,]*),([^)]*)\)/;
+            let params = typeUrl.match(arkoRegex)?.[0] ?? '';
+            let id1 = typeUrl.match(arkoRegex)?.[1] ?? '';
+            let id2 = typeUrl.match(arkoRegex)?.[2] ?? '';
+
+            let arkoParams = `arko_default_${id1}--filtreGroupes[groupes][0]` +
+                `[arko_default_${id2}][op]=AND&arko_default_${id1}--filtreGroupes[groupes][0]` + 
+                `[arko_default_${id2}][q][]=@PARAM&arko_default_${id1}--filtreGroupes[groupes][0][arko_default_${id2}][extras][mode]=popup`;
+
+        
+            return ((!differentBaseUrl ? urlData.baseUrl : "") + typeUrl)
+                .replace(params, arkoParams)
+                .replace("@PARAM", FormatHelper.applyFormatToCommuneName(commune.nom, typeParamFormat));
+        }
+
     
-        let archiveUrl: string = ((!differentBaseUrl ? urlData.baseUrl : "") + urlData.etatCivilUrl).replace("@PARAM", FormatHelper.applyFormatToCommuneName(commune.nom, urlData.etatCivilParamFormat));
+        let archiveUrl: string = ((!differentBaseUrl ? urlData.baseUrl : "") + typeUrl)
+            .replaceAll("@PARAM", FormatHelper.applyFormatToCommuneName(commune.nom, typeParamFormat));
         return archiveUrl;
+    }
+
+    handleArchiveTypeChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
+        this.setState({selectedArchiveType: event.target.value});
     }
 
 
     render() {
         return (
             <div className="etatcivil-content">
+                <div className="archives-select">
+                    <div>
+                        <input type="radio" id="etat-civil" name="archive-type" value="etat-civil" 
+                                checked={this.state.selectedArchiveType == 'etat-civil'}
+                                onChange={this.handleArchiveTypeChange}/>
+                        <label htmlFor="etat-civil">État civil</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="recensements" name="archive-type" value="recensements" 
+                                checked={this.state.selectedArchiveType == 'recensements'}
+                                onChange={this.handleArchiveTypeChange}/>
+                        <label htmlFor="cadastre">Recensements</label>
+                    </div>
+                </div>
                 <div className="popup-search">
                     <input type="text" 
                             id="searchInput" placeholder="Entrez le nom d'une ville"

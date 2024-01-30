@@ -25,7 +25,6 @@ class DepartementList extends React.Component<DepartementListProps, DepartementL
         fetch(`https://geo.api.gouv.fr/departements`)
                 .then(response => response.json())
                 .then((data: IDepartement[]) => {
-                    console.log(data);
                     this.setState({departementList: data});
                 })
                 .catch(error => {
