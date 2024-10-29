@@ -46,7 +46,7 @@ class EtatCivil extends React.Component<EtatCivilProps, EtatCivilState> {
     selectCommune(commune: ICommune | null): void {
         this.setState({selectedCommune: commune});
         const searchInput: HTMLInputElement = document.getElementById('searchInput') as HTMLInputElement;
-        searchInput.value = commune?.nom + " (" + commune?.code + ")" ?? '';
+        searchInput.value = commune?.nom + " (" + commune?.code + ")";
     }
 
     searchCommune = (): void => {

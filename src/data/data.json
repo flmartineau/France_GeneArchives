@@ -265,9 +265,9 @@
   },
   {
     "codeDepartement": "33",
-    "baseUrl": "https://archives.gironde.fr/n/recherches-dans-les-fonds/n:107",
-    "etatCivilUrl": "https://archives.gironde.fr/archive/resultats/etatcivil/n:89?REch_commune=@PARAM",
-    "recensementUrl": "https://archives.gironde.fr/archive/resultats/recensement/lineaire/FRAD033_IR_6M/n:224?RECH_lieu=@PARAM",
+    "baseUrl": "https://archives.gironde.fr/n/formulaires-de-recherche/n:619",
+    "etatCivilUrl": "https://archives.gironde.fr/archive/resultats/etatcivil/n:629?REch_commune=@PARAM",
+    "recensementUrl": "https://archives.gironde.fr/archive/resultats/recensement/lineaire/FRAD033_IR_6M/n:634?RECH_lieu=@PARAM",
     "etatCivilParamFormat": "SIMPLE_NAME",
     "recensementParamFormat": "SIMPLE_NAME"
   },
