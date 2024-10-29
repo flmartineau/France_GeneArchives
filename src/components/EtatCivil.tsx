@@ -2,6 +2,7 @@ import React from "react";
 import { ICommune } from "../interfaces/ICommune";
 import { FormatHelper } from "../helper/FormatHelper";
 import { IUrls } from "../interfaces/IUrls";
+import CancelSharpIcon from '@mui/icons-material/CancelSharp';
 
 interface EtatCivilProps {
     urlsData: IUrls[] | null;
@@ -51,7 +52,42 @@ class EtatCivil extends React.Component<EtatCivilProps, EtatCivilState> {
 
     searchCommune = (): void => {
         const searchUrl: string = this.state.selectedCommune ? this.getArchiveURL(this.state.selectedCommune) : '';
+        
+            // Retrieve the saved communes from localStorage
+            let recentCommunes = JSON.parse(localStorage.getItem('recentCommunes') || '[]');
+
+
+            if (!recentCommunes.some((c: ICommune) => c.code === this.state.selectedCommune?.code)) {
+            
+            // Add the new commune to the list
+            if (this.state.selectedCommune) {
+                recentCommunes.unshift(this.state.selectedCommune);
+            }
+ 
+            if (recentCommunes.length > 6) {
+                recentCommunes = recentCommunes.slice(0, 6);
+            }
+ 
+            localStorage.setItem('recentCommunes', JSON.stringify(recentCommunes));
+        }
+        
+        
+        
         browser.tabs.create({ url: searchUrl }); 
+    }
+
+
+    searchRecentCommune = (commune: ICommune): void => {
+        const searchUrl: string = commune ? this.getArchiveURL(commune) : '';
+        browser.tabs.create({ url: searchUrl }); 
+    }
+
+
+    removeRecentCommune = (commune: ICommune): void => {
+        let recentCommunes = JSON.parse(localStorage.getItem('recentCommunes') || '[]');
+        recentCommunes = recentCommunes.filter((c: ICommune) => c.code !== commune.code);
+        localStorage.setItem('recentCommunes', JSON.stringify(recentCommunes));
+        this.forceUpdate();
     }
 
 
@@ -139,6 +175,21 @@ class EtatCivil extends React.Component<EtatCivilProps, EtatCivilState> {
                     ))}
 
                 </div>
+
+                <div className="recent-communes">
+                    {JSON.parse(localStorage.getItem('recentCommunes') || '[]').map((commune: ICommune) => (
+                        <button className="recent-communes-item" key={commune.code} onClick={() => this.searchRecentCommune(commune)}>
+                            <div>{commune.nom} ({commune.code})</div>
+                            <CancelSharpIcon onClick={(event) => {
+                                event.stopPropagation();
+                                this.removeRecentCommune(commune);
+                            }}
+                            className="recent-communes-item-clear" style={{ fontSize: '16px' }}/>
+                        </button>
+                    ))}
+                
+                </div>
+
                 <div className="footer">
                     <p>Remarque : La recherche d'informations sur certaines villes peut ne pas être disponible pour tous les départements.
                     Dans ce cas, vous serez redirigé vers le formulaire de recherche d'état civil du département associé
