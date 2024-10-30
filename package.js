@@ -17,7 +17,7 @@ fs.readFile('manifest.json', 'utf8', (err, data) => {
   const manifest = JSON.parse(data);
   const version = manifest.version;
 
-  exec(`cd dist && tar.exe -a -c -f ${path.join(outDir, version + '.zip')} *`, (err) => {
+  exec(`cd dist && zip -r ${path.join(outDir, version + '.zip')} *`, (err) => {
     if (err) {
       console.error(`Erreur lors de la création du fichier zip: ${err}`);
       process.exit(1);
@@ -26,7 +26,7 @@ fs.readFile('manifest.json', 'utf8', (err, data) => {
     console.log(`Fichier ${version}.zip créé avec succès dans le dossier 'out'.`);
   });
 
-  exec(`tar.exe --exclude=dist --exclude=out --exclude=.git --exclude=node_modules --exclude=package-lock.json --exclude=package.js -a -c -f ${path.join(outDir, 'code-' + version + '.zip')} *`, (err) => {
+  exec(`zip -r ${path.join(outDir, 'code-' + version + '.zip')} . -x "dist/*" "out/*" ".git/*" "node_modules/*" "package-lock.json" "package.js"`, (err) => {
     if (err) {
       console.error(`Erreur lors de la création du fichier zip: ${err}`);
       process.exit(1);
@@ -34,7 +34,6 @@ fs.readFile('manifest.json', 'utf8', (err, data) => {
 
     console.log(`Fichier code-${version}.zip créé avec succès.`);
   });
-
 
 
 
